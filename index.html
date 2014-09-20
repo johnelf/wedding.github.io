@@ -18,18 +18,16 @@
 
     <script src="assets/js/jquery-1.8.2.min.js"></script>
 	<script src="assets/js/Chart.js"></script>
-	<script src="assets/js/modernizr.custom.js"></script>
 	<script src="assets/js/jquery.plugin.min.js"></script>
 	<link href="assets/js/jcountdown.css" rel="stylesheet" type="text/css">
 	<script src="assets/js/jquery.jcountdown.min.js"></script>
-    <script src="assets/js/libs/jquery.js"></script>
     <script src="assets/js/flipclock.js"></script>
     <link rel="stylesheet" href="assets/css/flipclock.css">
 	<style type="text/css">
 	#divMap{height:500px;width:100%; }
 	#r-result{height:0;width:0}
 	</style>
-	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DnY5SHBLYmU4gYkcGDyle5nF"></script>
+	<script type="text/javascript" src="assets/js/baidu.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="assets/js/html5shiv.js"></script>
@@ -160,7 +158,7 @@
 </html>
 <script type="text/javascript">
 
-// 百度地图API功能 
+// 百度地图API功能
 var map = new BMap.Map("divMap");            // 创建Map实例
 map.centerAndZoom(new BMap.Point(108.866253,34.211513), 11);
 var local = new BMap.LocalSearch(map, {
